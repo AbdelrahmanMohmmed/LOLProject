@@ -2,14 +2,16 @@ from functions import *
 from acceptgame import *
 
 while True:
-    goingdownPhoto = ['goingDown.png','goingDown2.png','goingDown3.png','goingDown4.png','goingDown5.png','goingDown6.png']
+    goingdownPhoto = [f'goingDown{i}.png' for i in range(1,9)]
     inGame = CheckenterGame()
     if inGame:
         if inGame in goingdownPhoto :
             print("goingDown")
             X,Y = goingDown()
         else:
-            print("GoingUP") 
+
+            
+            print("GoingUP")
             X,Y = goingTop()
         pucheitem()
         lockScreen()

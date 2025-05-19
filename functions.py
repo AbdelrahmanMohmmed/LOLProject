@@ -3,7 +3,7 @@ from random import randint
 from  acceptgame import CheckWinGame
 def pucheitem():
     pydirectinput.press('p')
-    pyautogui.moveTo(600,600)
+    pyautogui.moveTo(550,550)
     pyautogui.rightClick()
     pydirectinput.press('enter')
     pydirectinput.press('esc')
