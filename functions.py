@@ -32,7 +32,7 @@ def Playing(X,Y):
             pydirectinput.press(key)
             time.sleep(0.5)
         pydirectinput.keyDown('ctrl')
-        for key in Allkeys:
+        for key in reversed(Allkeys):
             pydirectinput.press(key)
         pydirectinput.keyUp('ctrl')
         time.sleep(BigSleep)
